@@ -1,0 +1,136 @@
+body{
+    font-family: system-ui;
+}
+header{
+    background-color: #e89bfc;
+    padding-top: 20px;
+    padding-bottom: 18px;
+    box-shadow: 0 7px 8px -3px rgb(20, 1, 24);
+    position: fixed;
+    width: 100%;
+    margin-top: -10px;
+    z-index: 99;
+}
+.container{
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+}
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    position: relative;
+}
+
+
+.logo{
+    width: 164px;
+    height: 84px;
+    cursor: pointer;
+}
+
+.cart{
+    width: 39px;
+    height: 38px;
+   
+}
+.cart-products{
+    position: absolute!important;
+    top: 82px;
+    right: -18px;
+    background-color: rgb(248, 191, 236);
+  
+    
+   
+
+    
+}
+
+
+
+.products{
+
+    padding-top: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.carts{
+    max-width: 250px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    /*estos estilos son para los botones */
+    padding-bottom: 34px;
+    margin-bottom: 40px;
+}
+.carts img{
+    width: 100%;
+    
+}
+
+.carts div p{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background-color: rgb(247, 137, 223);
+    color: #fff;
+    /*estas son las que hacen el poligono */
+    padding: 2px 7px 4px 21px;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+/*este hace la posicion del pentagono*/
+.carts div{
+    position: relative;
+}
+.carts a{
+  /*boton */
+    text-decoration: none;
+    background: rgb(247, 137, 223);
+    padding: 9px 23px;
+    color: #fff;
+  
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.carts a:hover{
+    background: #fff;
+    color: rgb(236, 131, 210);
+    border: solid 2px rgb(239, 157, 247);
+    transition-duration: .3s;
+}
+
+.cart-products .item img{
+    width: 115px;
+}
+
+.cart-products .item{
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px rgb(177, 93, 163);
+}
+.cart-products .item .item-content{
+    margin: 0 19px;
+    width: 201px;
+}
+.cart-products .item .item-content h5{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+   
+}
+.cart-products .item .item-content h6{
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+   
+}
+.cart-products .item span{
+    background-color: rgb(143, 20, 137);
+    padding: 0px 5px;
+    border-radius: 60%;
+    color: #fff;
+    
+}
